@@ -7,5 +7,9 @@ math:
 license: 
 hidden: false
 comments: true
-draft: true
+draft: false
+categories:
+  - 大标题
+tags:
+  - 小标题
 ---
