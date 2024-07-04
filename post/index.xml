@@ -7,7 +7,7 @@
 &lt;p>Photo by &lt;a class="link" href="https://unsplash.com/@pawel_czerwinski" target="_blank" rel="noopener"
 >Pawel Czerwinski&lt;/a> on &lt;a class="link" href="https://unsplash.com/" target="_blank" rel="noopener"
 >Unsplash&lt;/a>&lt;/p>
-&lt;/blockquote></description></item><item><title>测试</title><link>https://example.com/p/%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 04 Jul 2024 17:51:10 +0800</pubDate><guid>https://example.com/p/%E6%B5%8B%E8%AF%95/</guid><description/></item><item><title>Git免密push</title><link>https://example.com/p/git%E5%85%8D%E5%AF%86push/</link><pubDate>Wed, 03 Jul 2024 16:59:01 +0800</pubDate><guid>https://example.com/p/git%E5%85%8D%E5%AF%86push/</guid><description>&lt;h1 id="在忘记密码的情况下push或pull">在忘记密码的情况下push或pull
+&lt;/blockquote></description></item><item><title>测试</title><link>https://example.com/p/%E6%B5%8B%E8%AF%95/</link><pubDate>Thu, 04 Jul 2024 17:51:10 +0800</pubDate><guid>https://example.com/p/%E6%B5%8B%E8%AF%95/</guid><description>&lt;p>54654654&lt;/p></description></item><item><title>Git免密push</title><link>https://example.com/p/git%E5%85%8D%E5%AF%86push/</link><pubDate>Wed, 03 Jul 2024 16:59:01 +0800</pubDate><guid>https://example.com/p/git%E5%85%8D%E5%AF%86push/</guid><description>&lt;h1 id="在忘记密码的情况下push或pull">在忘记密码的情况下push或pull
 &lt;/h1>&lt;p>在https连接的情况下push或pull会询问用户名和密码，每次输入用户密码会有点麻烦，所有我们可以使用SSH 来操作，公钥文件和私钥文件就成了我们免密验证的关键，以下是具体操作。&lt;/p>
 &lt;h2 id="生成公钥文件和私钥文件">生成公钥文件和私钥文件
 &lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
