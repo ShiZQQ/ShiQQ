@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Gitee on ShiQ</title><link>https://example.com/tags/gitee/</link><description>Recent content in Gitee on ShiQ</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Example Person</copyright><lastBuildDate>Wed, 03 Jul 2024 16:59:01 +0800</lastBuildDate><atom:link href="https://example.com/tags/gitee/index.xml" rel="self" type="application/rss+xml"/><item><title>Git免密push</title><link>https://example.com/p/git%E5%85%8D%E5%AF%86push/</link><pubDate>Wed, 03 Jul 2024 16:59:01 +0800</pubDate><guid>https://example.com/p/git%E5%85%8D%E5%AF%86push/</guid><description>&lt;h1 id="在忘记密码的情况下push或pull">在忘记密码的情况下push或pull
+&lt;/h1>&lt;p>在https连接的情况下push或pull会询问用户名和密码，每次输入用户密码会有点麻烦，所有我们可以使用SSH 来操作，公钥文件和私钥文件就成了我们免密验证的关键，以下是具体操作。&lt;/p>
+&lt;h2 id="生成公钥文件和私钥文件">生成公钥文件和私钥文件
+&lt;/h2>&lt;div class="highlight">&lt;div class="chroma">
+&lt;table class="lntable">&lt;tr>&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code>&lt;span class="lnt">1
+&lt;/span>&lt;span class="lnt">2
+&lt;/span>&lt;span class="lnt">3
+&lt;/span>&lt;/code>&lt;/pre>&lt;/td>
+&lt;td class="lntd">
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-bash" data-lang="bash">&lt;span class="line">&lt;span class="cl">ssh-keygen -t rsa -C &lt;span class="s2">&amp;#34;2837355374@qq.com&amp;#34;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#`-t rsa`：指定生成的密钥类型是 RSA。RSA 是一种常见的公钥加密算法。#&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">#上面的邮箱是绑定的邮箱，本次我们拿gitee举例&lt;/span>
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
+&lt;/div>
+&lt;/div>&lt;p>输入指令之后点三次回车键&lt;/p>
+&lt;p>&lt;img src="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703172400860.png"
+width="598"
+height="346"
+srcset="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703172400860_hu6c6fc5bba8a883762c9c0fcbd552a817_10429_480x0_resize_box_3.png 480w, https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703172400860_hu6c6fc5bba8a883762c9c0fcbd552a817_10429_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240703172400860"
+class="gallery-image"
+data-flex-grow="172"
+data-flex-basis="414px"
+>&lt;/p>
+&lt;p>上面显示保存路径在 C:\Users\ShiQ/.ssh/id_rsa.&lt;/p>
+&lt;p>&lt;img src="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703172556356.png"
+width="1044"
+height="484"
+srcset="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703172556356_hub5da72cab21b2cb431b4bc1a8821f53d_44161_480x0_resize_box_3.png 480w, https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703172556356_hub5da72cab21b2cb431b4bc1a8821f53d_44161_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240703172556356"
+class="gallery-image"
+data-flex-grow="215"
+data-flex-basis="517px"
+>&lt;/p>
+&lt;p>复制id_rsa.pub中的内容&lt;/p>
+&lt;h2 id="配置gitee中ssh公钥">配置gitee中SSH公钥
+&lt;/h2>&lt;p>点击个人设置页面&lt;/p>
+&lt;p>&lt;img src="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174304243.png"
+width="1450"
+height="933"
+srcset="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174304243_hufdc2bdef3658432e7ab054b371b08aad_89786_480x0_resize_box_3.png 480w, https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174304243_hufdc2bdef3658432e7ab054b371b08aad_89786_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240703174304243"
+class="gallery-image"
+data-flex-grow="155"
+data-flex-basis="372px"
+>&lt;/p>
+&lt;p>点击ssh公钥&lt;/p>
+&lt;p>&lt;img src="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174342204.png"
+width="1404"
+height="891"
+srcset="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174342204_hu64a08e65642a9f0784999d0e6524c82c_71364_480x0_resize_box_3.png 480w, https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174342204_hu64a08e65642a9f0784999d0e6524c82c_71364_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240703174342204"
+class="gallery-image"
+data-flex-grow="157"
+data-flex-basis="378px"
+>&lt;/p>
+&lt;p>填写标题和公钥（刚才复制的内容）&lt;/p>
+&lt;p>输入gitee密码即可完成设置&lt;/p>
+&lt;p>&lt;img src="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174610562.png"
+width="994"
+height="167"
+srcset="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174610562_huc2d13353eeaf5393fc5d8e768aa8e29a_19242_480x0_resize_box_3.png 480w, https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174610562_huc2d13353eeaf5393fc5d8e768aa8e29a_19242_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240703174610562"
+class="gallery-image"
+data-flex-grow="595"
+data-flex-basis="1428px"
+>&lt;/p>
+&lt;p>再次pull代码时不会再询问用户名（邮箱）和密码&lt;/p>
+&lt;p>&lt;img src="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174816886.png"
+width="611"
+height="195"
+srcset="https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174816886_hu7e5fc444fa88aa66f90dfdb1de1aff14_6821_480x0_resize_box_3.png 480w, https://example.com/p/git%E5%85%8D%E5%AF%86push/image-20240703174816886_hu7e5fc444fa88aa66f90dfdb1de1aff14_6821_1024x0_resize_box_3.png 1024w"
+loading="lazy"
+alt="image-20240703174816886"
+class="gallery-image"
+data-flex-grow="313"
+data-flex-basis="752px"
+>&lt;/p></description></item></channel></rss>
