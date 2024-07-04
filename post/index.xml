@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on ShiQ</title><link>https://example.com/post/</link><description>Recent content in Posts on ShiQ</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Example Person</copyright><lastBuildDate>Thu, 04 Jul 2024 17:51:10 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://example.com/p/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://example.com/p/hello-world/</guid><description>&lt;img src="https://example.com/p/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Posts on 演示站点</title><link>https://example.com/post/</link><description>Recent content in Posts on 演示站点</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Thu, 04 Jul 2024 17:51:10 +0800</lastBuildDate><atom:link href="https://example.com/post/index.xml" rel="self" type="application/rss+xml"/><item><title>Hello World</title><link>https://example.com/p/hello-world/</link><pubDate>Sun, 06 Mar 2022 00:00:00 +0000</pubDate><guid>https://example.com/p/hello-world/</guid><description>&lt;img src="https://example.com/p/hello-world/cover.jpg" alt="Featured image of post Hello World" />&lt;p>Welcome to Hugo theme Stack. This is your first post. Edit or delete it, then start writing!&lt;/p>
 &lt;p>For more information about this theme, check the documentation: &lt;a class="link" href="https://stack.jimmycai.com/" target="_blank" rel="noopener"
 >https://stack.jimmycai.com/&lt;/a>&lt;/p>
 &lt;p>Want a site like this? Check out &lt;a class="link" href="https://github.com/CaiJimmy/hugo-theme-stack-starter" target="_blank" rel="noopener"
@@ -1865,9 +1865,11 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;span class="lnt">18
 &lt;/span>&lt;span class="lnt">19
 &lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">frames&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;black&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>
@@ -1884,9 +1886,9 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">transform&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;translateX(200px) translateY(100px) scale(2)&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;blu
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1"> e&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;blue&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>而以下从一开始就设置了transform，则层层覆盖，从0-0.3是向右移动100px大小不变。从0.3-0.6是向下移动100px（因为transform: &amp;rsquo;translateX(100px)所以x上不会再该改变。）大小不变，从0.6之后大小会发生改变，并向右再次移动100px&lt;/p>
@@ -1911,9 +1913,12 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;span class="lnt">17
 &lt;/span>&lt;span class="lnt">18
 &lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">frames&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;black&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">transform&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;translateX(0)&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>
@@ -1932,6 +1937,7 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;blue&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="例子">例子
@@ -2153,19 +2159,19 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;span class="lnt">13
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;div class=&amp;#34;transition&amp;#34; style={{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//做点击时
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: size, height: size, position: &amp;#39;relative&amp;#39;, transform: `translateX(${current ? 0 : 100}%)`
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}}&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;div style={{height: &amp;#39;100%&amp;#39;}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> //做预点击时
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> class={`center transition ${current ? &amp;#39;left&amp;#39; : &amp;#39;right&amp;#39;}`}&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;div style={{height: scale, width: scale, position: &amp;#39;relative&amp;#39;}}&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;img class=&amp;#34;transition moon&amp;#34; style={{opacity: current ? 1 : 0}} src=&amp;#34;./moon.svg&amp;#34;/&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;img class=&amp;#34;transition sun&amp;#34; style={{opacity: !current ? 1 : 0}} src=&amp;#34;./sun.svg&amp;#34;/&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/div&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/div&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/div&amp;gt;
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;transition&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//做点击时
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">width&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">position&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;relative&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">transform&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="sb">`translateX(&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">%)`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}}&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;100%&amp;#39;&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">//&lt;/span>&lt;span class="na">做预点击时&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="sb">`center transition &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="s1">&amp;#39;left&amp;#39;&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;right&amp;#39;&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">}&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">scale&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">width&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">scale&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">position&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;relative&amp;#39;&lt;/span>&lt;span class="p">}}&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;transition moon&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">opacity&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">}}&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;./moon.svg&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;transition sun&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">opacity&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">}}&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;./sun.svg&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>按钮文件&lt;/p>
@@ -2427,7 +2433,8 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="快捷键补充">快捷键补充
+&lt;/div>&lt;iframe src="https://example.com/template/react-demo.html" style="width: 400px;height: 300px" />
+&lt;h2 id="快捷键补充">快捷键补充
 &lt;/h2>&lt;p>ctrl+.可以快捷键收代码（收一个层级&lt;/p>
 &lt;p>lorem1000+tab可以生成1000个字符的字符串（指定多少个）&lt;/p>
 &lt;p>lorem + tab可以生成很多无意义的字符串&lt;/p></description></item><item><title>Markdown Syntax Guide</title><link>https://example.com/p/markdown-syntax-guide/</link><pubDate>Thu, 07 Sep 2023 00:00:00 +0000</pubDate><guid>https://example.com/p/markdown-syntax-guide/</guid><description>&lt;p>This article offers a sample of basic Markdown syntax that can be used in Hugo content files, also it shows whether basic HTML elements are decorated with CSS in a Hugo theme.&lt;/p>

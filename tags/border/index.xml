@@ -1,4 +1,4 @@
-<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Border on ShiQ</title><link>https://example.com/tags/border/</link><description>Recent content in Border on ShiQ</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Example Person</copyright><lastBuildDate>Wed, 03 Jul 2024 16:22:56 +0800</lastBuildDate><atom:link href="https://example.com/tags/border/index.xml" rel="self" type="application/rss+xml"/><item><title>前端笔记</title><link>https://example.com/p/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</link><pubDate>Wed, 03 Jul 2024 16:22:56 +0800</pubDate><guid>https://example.com/p/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</guid><description>&lt;h1 id="关于前端的知识点">关于前端的知识点
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Border on 演示站点</title><link>https://example.com/tags/border/</link><description>Recent content in Border on 演示站点</description><generator>Hugo -- gohugo.io</generator><language>zh-cn</language><copyright>Example Person</copyright><lastBuildDate>Wed, 03 Jul 2024 16:22:56 +0800</lastBuildDate><atom:link href="https://example.com/tags/border/index.xml" rel="self" type="application/rss+xml"/><item><title>前端笔记</title><link>https://example.com/p/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</link><pubDate>Wed, 03 Jul 2024 16:22:56 +0800</pubDate><guid>https://example.com/p/%E5%89%8D%E7%AB%AF%E7%AC%94%E8%AE%B0/</guid><description>&lt;h1 id="关于前端的知识点">关于前端的知识点
 &lt;/h1>&lt;h3 id="撑满屏幕高度">撑满屏幕高度
 &lt;/h3>&lt;div class="highlight">&lt;div class="chroma">
 &lt;table class="lntable">&lt;tr>&lt;td class="lntd">
@@ -218,9 +218,11 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;span class="lnt">18
 &lt;/span>&lt;span class="lnt">19
 &lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">frames&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;black&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>
@@ -237,9 +239,9 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">transform&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;translateX(200px) translateY(100px) scale(2)&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;blu
-&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="s1"> e&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;blue&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>而以下从一开始就设置了transform，则层层覆盖，从0-0.3是向右移动100px大小不变。从0.3-0.6是向下移动100px（因为transform: &amp;rsquo;translateX(100px)所以x上不会再该改变。）大小不变，从0.6之后大小会发生改变，并向右再次移动100px&lt;/p>
@@ -264,9 +266,12 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;span class="lnt">17
 &lt;/span>&lt;span class="lnt">18
 &lt;/span>&lt;span class="lnt">19
+&lt;/span>&lt;span class="lnt">20
+&lt;/span>&lt;span class="lnt">21
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="p">{&lt;/span>
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-js" data-lang="js">&lt;span class="line">&lt;span class="cl">&lt;span class="kr">const&lt;/span> &lt;span class="nx">frames&lt;/span> &lt;span class="o">=&lt;/span> &lt;span class="p">[&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">{&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;black&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">transform&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;translateX(0)&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>
@@ -285,6 +290,7 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">offset&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="mi">1&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="nx">background&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;blue&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">]&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;h3 id="例子">例子
@@ -506,19 +512,19 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;span class="lnt">13
 &lt;/span>&lt;/code>&lt;/pre>&lt;/td>
 &lt;td class="lntd">
-&lt;pre tabindex="0" class="chroma">&lt;code class="language-fallback" data-lang="fallback">&lt;span class="line">&lt;span class="cl">&amp;lt;div class=&amp;#34;transition&amp;#34; style={{
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">//做点击时
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> width: size, height: size, position: &amp;#39;relative&amp;#39;, transform: `translateX(${current ? 0 : 100}%)`
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">}}&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;div style={{height: &amp;#39;100%&amp;#39;}}
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> //做预点击时
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> class={`center transition ${current ? &amp;#39;left&amp;#39; : &amp;#39;right&amp;#39;}`}&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;div style={{height: scale, width: scale, position: &amp;#39;relative&amp;#39;}}&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;img class=&amp;#34;transition moon&amp;#34; style={{opacity: current ? 1 : 0}} src=&amp;#34;./moon.svg&amp;#34;/&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;img class=&amp;#34;transition sun&amp;#34; style={{opacity: !current ? 1 : 0}} src=&amp;#34;./sun.svg&amp;#34;/&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/div&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &amp;lt;/div&amp;gt;
-&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&amp;lt;/div&amp;gt;
+&lt;pre tabindex="0" class="chroma">&lt;code class="language-jsx" data-lang="jsx">&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;transition&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">//做点击时
+&lt;/span>&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="c1">&lt;/span> &lt;span class="nx">width&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">size&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">position&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;relative&amp;#39;&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">transform&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="sb">`translateX(&lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="mi">0&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">100&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">%)`&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">}}&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;100%&amp;#39;&lt;/span>&lt;span class="p">}}&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="err">//&lt;/span>&lt;span class="na">做预点击时&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{&lt;/span>&lt;span class="sb">`center transition &lt;/span>&lt;span class="si">${&lt;/span>&lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="s1">&amp;#39;left&amp;#39;&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;right&amp;#39;&lt;/span>&lt;span class="si">}&lt;/span>&lt;span class="sb">`&lt;/span>&lt;span class="p">}&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">div&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">height&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">scale&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">width&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">scale&lt;/span>&lt;span class="p">,&lt;/span> &lt;span class="nx">position&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="s1">&amp;#39;relative&amp;#39;&lt;/span>&lt;span class="p">}}&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;transition moon&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">opacity&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">}}&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;./moon.svg&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;&lt;/span>&lt;span class="nt">img&lt;/span> &lt;span class="na">class&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;transition sun&amp;#34;&lt;/span> &lt;span class="na">style&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="p">{{&lt;/span>&lt;span class="nx">opacity&lt;/span>&lt;span class="o">:&lt;/span> &lt;span class="o">!&lt;/span>&lt;span class="nx">current&lt;/span> &lt;span class="o">?&lt;/span> &lt;span class="mi">1&lt;/span> &lt;span class="o">:&lt;/span> &lt;span class="mi">0&lt;/span>&lt;span class="p">}}&lt;/span> &lt;span class="na">src&lt;/span>&lt;span class="o">=&lt;/span>&lt;span class="s">&amp;#34;./sun.svg&amp;#34;&lt;/span>&lt;span class="p">/&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl"> &lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
+&lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">div&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
 &lt;/div>&lt;p>按钮文件&lt;/p>
@@ -780,7 +786,8 @@ translateY =&amp;gt;相对本身 height&lt;/p>
 &lt;/span>&lt;/span>&lt;span class="line">&lt;span class="cl">&lt;span class="p">&amp;lt;/&lt;/span>&lt;span class="nt">html&lt;/span>&lt;span class="p">&amp;gt;&lt;/span>
 &lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/td>&lt;/tr>&lt;/table>
 &lt;/div>
-&lt;/div>&lt;h2 id="快捷键补充">快捷键补充
+&lt;/div>&lt;iframe src="https://example.com/template/react-demo.html" style="width: 400px;height: 300px" />
+&lt;h2 id="快捷键补充">快捷键补充
 &lt;/h2>&lt;p>ctrl+.可以快捷键收代码（收一个层级&lt;/p>
 &lt;p>lorem1000+tab可以生成1000个字符的字符串（指定多少个）&lt;/p>
 &lt;p>lorem + tab可以生成很多无意义的字符串&lt;/p></description></item></channel></rss>
