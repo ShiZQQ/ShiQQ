@@ -159,7 +159,8 @@ translateY =>相对本身 height
 
 关于transform是覆盖的，比如以下代码，只在最后设置了transform则动画是从0~1中间缓缓向translateX(200px)  translateY(100px) scale(2)变化
 
-~~~js
+```js
+const frames = [
  {
                 background: 'black',
               
@@ -177,35 +178,37 @@ translateY =>相对本身 height
             {
                 transform: 'translateX(200px)  translateY(100px) scale(2)',
                 offset: 1,
-                background: 'blu
-                e',
+                background: 'blue',
             }
-~~~
+            ]
+```
 
 
 
 而以下从一开始就设置了transform，则层层覆盖，从0-0.3是向右移动100px大小不变。从0.3-0.6是向下移动100px（因为transform: 'translateX(100px)所以x上不会再该改变。）大小不变，从0.6之后大小会发生改变，并向右再次移动100px
 
 ~~~js
-{
-                background: 'black',
-                transform: 'translateX(0)',
-                offset: 0
-            },
-            {
-                transform: 'translateX(100px) ',
-                offset: 0.3
-            },
-            {
-                transform: 'translateX(100px) translateY(100px) ',
-                background: 'red',
-                offset: 0.6
-            },
-            {
-                transform: 'translateX(200px)  translateY(100px) scale(2)',
-                offset: 1,
-                background: 'blue',
-            }
+const frames = [
+    {
+        background: 'black',
+        transform: 'translateX(0)',
+        offset: 0
+    },
+    {
+        transform: 'translateX(100px) ',
+        offset: 0.3
+    },
+    {
+        transform: 'translateX(100px) translateY(100px) ',
+        background: 'red',
+        offset: 0.6
+    },
+    {
+        transform: 'translateX(200px)  translateY(100px) scale(2)',
+        offset: 1,
+        background: 'blue',
+    }
+]
 ~~~
 
 
@@ -338,7 +341,7 @@ opacity: current ? 1 : 0}
 
 有些操作需要通过套两层div来实现效果
 
-```
+```jsx
 <div class="transition" style={{
 //做点击时
     width: size, height: size, position: 'relative', transform: `translateX(${current ? 0 : 100}%)`
@@ -490,6 +493,7 @@ opacity: current ? 1 : 0}
 ```
 
 
+<iframe src="/template/react-demo.html" style="width: 400px;height: 300px" />
 
 
 

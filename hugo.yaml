@@ -7,32 +7,32 @@ copyright: Example Person
 
 # Theme i18n support
 # Available values: ar, bn, ca, de, el, en, es, fr, hu, id, it, ja, ko, nl, pt-br, th, uk, zh-cn, zh-hk, zh-tw
-DefaultContentLanguage: en
+DefaultContentLanguage: zh-cn
 
 # Set hasCJKLanguage to true if DefaultContentLanguage is in [zh-cn ja ko]
 # This will make .Summary and .WordCount behave correctly for CJK languages.
 hasCJKLanguage: false
 
 languages:
-    en:
-        languageName: English
-        title: ShiQ
-        weight: 1
-        params:
-            description: Example description
+#    en:
+#        languageName: English
+#        title: ShiQ
+#        weight: 1
+#        params:
+#            description: Example description
     zh-cn:
         languageName: 中文
         title: 演示站点
         weight: 2
         params:
             description: 演示说明
-    ar:
-        languageName: عربي
-        languagedirection: rtl
-        title: موقع تجريبي
-        weight: 3
-        params:
-            description: وصف تجريبي
+#    ar:
+#        languageName: عربي
+#        languagedirection: rtl
+#        title: موقع تجريبي
+#        weight: 3
+#        params:
+#            description: وصف تجريبي
 
 services:
     # Change it to your Disqus shortname before using
